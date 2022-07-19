@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Container, FlexContainer } from '../sharedStyled';
-import { HoverContainer, HoverPhoto, HoverText } from './styled.demo';
+import { HoverContainer, HoverPhoto, HoverText } from '../styles/styled.demo';
 const textVariants = {
   beforeHover: {
     opacity: 0, transition: {
