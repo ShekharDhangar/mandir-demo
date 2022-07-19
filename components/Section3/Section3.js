@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Container } from '../../sharedStyled'
-import Section3Comp from './Section3comp'
+import Section3Comp from './section3comp'
 
 function Section3() {
     return (
