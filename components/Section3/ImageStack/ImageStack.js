@@ -51,20 +51,18 @@ export default function ImageStack({ cards }) {
                         zIndex: cards.length - index
                     });
                     return (
-                        <motion.div >
-                            <StackImage as={motion.div}
-                                animate={animateValues(index < 3 ? index : 3)}
-                            >
-                                <Image
-                                    src={item.url}
-                                    layout="responsive"
-                                    objectFit="cover"
-                                    objectPosition="center"
-                                    width="200"
-                                    height="200"
-                                />
-                            </StackImage>
-                        </motion.div>
+                        <StackImage as={motion.div}
+                            animate={animateValues(index < 3 ? index : 3)}
+                            key={index} >
+                            <Image
+                                src={item.url}
+                                layout="responsive"
+                                objectFit="cover"
+                                objectPosition="center"
+                                width="200"
+                                height="200"
+                            />
+                        </StackImage>
 
                     );
                 })}
