@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import { BgWrapper, Bg1Wrapper, PlayButtonBox } from './styled.section1'
-import { MdPlayCircleFilled } from 'react-icons/md';
-import { HeroText } from './Section1Text';
-import { ImageGridOuter } from '../../pages/styled.index';
-import ImageGrid from '../ImageGrid/ImageGrid';
+// import { MdPlayCircleFilled } from 'react-icons/md';
+// import { HeroText } from './Section1Text';
+// import { ImageGridOuter } from '../../;
+// import ImageGrid from '../ImageGrid/ImageGrid';
 export default function Section1() {
   return (
     <>
