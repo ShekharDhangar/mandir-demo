@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
-import { Container } from '../../../sharedStyled';
+import { Container,  } from '../../../sharedStyled';
+import { motion } from 'framer-motion';
 import { AccordionSection, Dropdown, Wrap } from './styled.accordion';
 const Data = [
     {
@@ -37,12 +38,23 @@ const Accordion = ({ nextFunction }) => {
                     {Data.map((item, index) => {
                         return (
                             <>
-                                <Wrap onClick={() => toggle(index)} key={index}>
+                                <Wrap onClick={() => toggle(index)} key={index}
+                                    as={motion.div}
+                                    initial='collapsed'
+                                    animate='open'
+                                    exit='collapsed'
+                                    variants={{
+                                        open: { opacity: 1, height: 'auto', },
+                                        collapsed: { opacity: 0, height: 0, }
+                                    }}
+                                    transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+                                >
                                     <h1>{item.question}</h1>
                                     <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                                 </Wrap>
                                 {clicked === index ? (
-                                    <Dropdown>
+                                    <Dropdown as={motion.div} variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
+                                        transition={{ duration: 0.8 }} >
                                         <p>{item.answer}</p>
                                     </Dropdown>
                                 ) : null}

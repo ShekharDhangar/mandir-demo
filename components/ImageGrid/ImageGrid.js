@@ -30,7 +30,7 @@ const ImagesVariant = {
         opacity: 1,
         x: 0,
         // rotate: -10,
-        transition: {  type: "spring", duration: 2, bounce: 0.4   }
+        transition: { type: "spring", duration: 2, }
     }
 }
 
@@ -99,7 +99,7 @@ function ImageGrid() {
                         />
                     </Image7>
                     <Image8 as={motion.div} variants={ImagesVariant} initial="hidden" whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <Image
                             src={gallery8}
@@ -123,16 +123,16 @@ function ImageGrid() {
                             objectFit="cover"
                         />
                     </Image10 >
-                    <Image11 as={motion.div} variants={ImagesVariant} initial="hidden"  whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                      >
+                    <Image11 as={motion.div} variants={ImagesVariant} initial="hidden" whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <Image
                             src={gallery11}
                             objectFit="cover"
                         />
                     </Image11>
-                    <Image12 as={motion.div} variants={ImagesVariant} initial="hidden"  whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
+                    <Image12 as={motion.div} variants={ImagesVariant} initial="hidden" whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <Image
                             src={gallery12}
@@ -156,17 +156,17 @@ function ImageGrid() {
                             src={gallery14}
                         />
                     </Image14>
-                    <Image15 as={motion.div} variants={ImagesVariant} initial="hidden"  whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                     >
+                    <Image15 as={motion.div} variants={ImagesVariant} initial="hidden" whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <Image
                             src={gallery15}
                             objectFit="cover"
                         />
                     </Image15>
-                    <Image16 as={motion.div} variants={ImagesVariant} initial="hidden"  whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                     >
+                    <Image16 as={motion.div} variants={ImagesVariant} initial="hidden" whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
                         <Image
                             src={gallery16}
                             objectFit="cover"

@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import { Container, FlexContainer } from '../../sharedStyled'
-import Section3Comp from './Section3comp'
+import ImageHover from './HoverImages'
 
-function Section3() {
+function Section4() {
     return (
         <Container zIndex="-10" overflow="hidden" w="100vw" h="100vh" >
             <Image
@@ -15,11 +15,11 @@ function Section3() {
                 quality={100}
                 priority
             />
-            <FlexContainer h="100%" w="100%" justify="center" align="center" position="relative" >
-            <Section3Comp />
-            </FlexContainer>
+            {/* <FlexContainer> */}
+            <ImageHover />
+            {/* </FlexContainer> */}
         </Container>
     )
 }
 
-export default Section3
+export default Section4

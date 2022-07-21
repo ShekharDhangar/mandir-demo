@@ -3,10 +3,6 @@ import { FlexContainer } from "../../../sharedStyled";
 export const AccordionSection = styled(FlexContainer)`
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  /* height: 100vh; */
-  height:max-content;
   width:50rem;
   flex-shrink:1 1 100%;
 `;

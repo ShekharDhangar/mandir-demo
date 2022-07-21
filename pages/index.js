@@ -1,32 +1,24 @@
-import ImageGrid from '../components/ImageGrid/ImageGrid';
 import Navbar from '../components/Navbar/Navbar';
-import { HorizontalInnerWrapper, Page, HorizontalWrapper, ImageGridOuter } from '../styles/styled.index';
-import Section3 from '../components/Section3/Section3';
-import Section1 from '../components/Section1/Section1';
-import Section2 from '../components/Section2/Section2';
+import { VerticalWrapper } from '../styles/styled.index';
+import Tabs from '../components/Section5/Section5';
+import { Container } from '../sharedStyled';
+import HorizontalScroll from '../components/HorizontalScroll/HorizontalScroll';
+import { Page } from '../components/HorizontalScroll/styled.horizontalScroll';
 
 export default function Home() {
   // const scrollRef = useHorizontalScroll();
   return (
     <>
       <Navbar />
-      <HorizontalWrapper>
-        <HorizontalInnerWrapper >
-          <Page>
-            <Section1 />
-            <ImageGridOuter>
-              <ImageGrid />
-            </ImageGridOuter>
-          </Page>
-          <Page>
-            <Section2 />
-          </Page>
-          <Page>
-            <Section3 />
-          </Page>
-        </HorizontalInnerWrapper>
-      </HorizontalWrapper>
+      <Container maxH="100vh" h="100vh" >
+        <HorizontalScroll />
+      </Container>
 
+      <VerticalWrapper>
+        <Page>
+          <Tabs />
+        </Page>
+      </VerticalWrapper>
     </>
   )
 }

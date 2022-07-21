@@ -15,7 +15,6 @@ export default function Navbar() {
                     alt="logo"
                     width={95}
                     height={90}
-                    priority
                 />
                 <NavItemsContainer as="ul" justify="center" align="center" >
                     {navbarData.map((item) => {

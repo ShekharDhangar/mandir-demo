@@ -4,7 +4,7 @@ export const StackWrapper = styled(FlexContainer)`
      position: relative;
      align-items: center;
      justify-content: center;
-    /* height: 100vh; */
+
 `
 export const InnerStackWrapper = styled(FlexContainer)`
      position: relative;
