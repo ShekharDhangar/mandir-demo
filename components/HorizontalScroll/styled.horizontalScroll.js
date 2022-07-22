@@ -33,10 +33,10 @@ export const Page = styled(Container)`
 export const ImageGridOuter = styled(FlexContainer)`
   justify-content:center;
   position:absolute;
-  top:10%;
+  top:2%;
   transform: translateX(50%);
   height:100vh;
   z-index:1;
-  align-items:start;
+  align-items:center;
   /* border:3px solid red; */
 `
