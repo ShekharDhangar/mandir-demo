@@ -12,22 +12,14 @@ export const useMediaQuery = (width) => {
     }, []);
 
     useEffect(() => {
-        const media = window.matchMedia(`(min-width: ${width}px)`);
+        const media = window.matchMedia(`screen and (min-width: ${width}px)`);
+        media.addEventListener("change", updateTarget);
         // Check on mount (callback is not called until a change occurs)
-
         if (media.matches) {
             setTargetReached(true);
         }
 
-        if (media.addEventListener) {
-            media.addEventListener('change', updateTarget)
-            return (() => media.removeEventListener("change", updateTarget));
-        } else {
-            // backwards compatibility
-            media.addListener(updateTarget)
-            return (() => media.removeListener("change", updateTarget));
-        }
-
+        return () => media.removeEventListener("change", updateTarget);
     }, []);
 
     return targetReached;
