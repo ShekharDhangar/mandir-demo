@@ -1,4 +1,4 @@
-const customMediaQuery = (minWidth) => `@media (min-width: ${minWidth}px)`;
+const customMediaQuery = (minWidth, width = "min") => `@media (${width}-width: ${minWidth}px)`;
 
 export const media = {
     custom: customMediaQuery,

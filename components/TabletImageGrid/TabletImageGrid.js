@@ -11,6 +11,7 @@ import gallery9 from '../../public/gallery-9.webp'
 import gallery13 from '../../public/gallery-13.webp'
 import { FlexContainer, } from '../../sharedStyled'
 import { motion } from "framer-motion";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { ImageGridContainer, ImageLeftGrid, Image1, Image2, Image3, Image4, Image5, Image6, Image9, Image13, ImageRightGrid } from './styled.tabletImageGrid'
 
 const ImagesVariant = {
@@ -26,6 +27,8 @@ const ImagesVariant = {
 }
 
 export default function TabletImageGrid() {
+    const largePhonePoint = useMediaQuery('(max-width:768px)');
+
     return (
         <ImageGridContainer  >
             <ImageLeftGrid layout >
@@ -59,42 +62,38 @@ export default function TabletImageGrid() {
                     />
                 </Image4>
             </ImageLeftGrid>
-            <ImageRightGrid>
-                <FlexContainer  align="flex-start" gap="1rem" >
-                    <Image5 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
-                    >
-                        <Image
-                            src={gallery8}
-                            objectFit="cover"
-                        />
-                    </Image5>
-                    {/* <Image6 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
-                    >
-                        <Image
-                            src={gallery6}
-                            objectFit="cover"
-                        />
-                    </Image6> */}
-                </FlexContainer>
-                <FlexContainer  align="flex-end" gap="1rem"   >
-                    <Image9 initial="hidden" animate="visible"
-                        as={motion.div} variants={ImagesVariant}>
-                        <Image
-                            src={gallery8}
-                            objectFit="cover"
-                        />
-                    </Image9 >
-                </FlexContainer>
-                <FlexContainer  align="flex-end" gap="1rem" as={motion.div}  >
-                    <Image13 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
-                    >
-                        <Image
-                            src={gallery8}
-                            objectFit="cover"
-                        />
-                    </Image13>
-                </FlexContainer>
-            </ImageRightGrid>
+            {!largePhonePoint && (
+                <ImageRightGrid>
+                    <FlexContainer align="flex-start" gap="1rem" >
+                        <Image5 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                        >
+                            <Image
+                                src={gallery8}
+                                objectFit="cover"
+                            />
+                        </Image5>
+                    </FlexContainer>
+                    <FlexContainer align="flex-end" gap="1rem"   >
+                        <Image9 initial="hidden" animate="visible"
+                            as={motion.div} variants={ImagesVariant}>
+                            <Image
+                                src={gallery8}
+                                objectFit="cover"
+                            />
+                        </Image9 >
+                    </FlexContainer>
+                    <FlexContainer align="flex-end" gap="1rem" as={motion.div}  >
+                        <Image13 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                        >
+                            <Image
+                                src={gallery8}
+                                objectFit="cover"
+                            />
+                        </Image13>
+                    </FlexContainer>
+                </ImageRightGrid>
+            )}
+
         </ImageGridContainer>
     )
 }

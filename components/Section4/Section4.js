@@ -15,9 +15,9 @@ function Section4() {
                 quality={100}
                 priority
             />
-            {/* <FlexContainer> */}
-            <ImageHover />
-            {/* </FlexContainer> */}
+            <FlexContainer h="100%" w="100%" justify="center" align="center" position="relative"  >
+                <ImageHover />
+            </FlexContainer>
         </Container>
     )
 }
