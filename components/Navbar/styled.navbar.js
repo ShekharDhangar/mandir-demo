@@ -8,7 +8,6 @@ const Header = styled.header`
 	top: 0rem;
 	z-index: 10;
     width:100vw;
-    /* border-bottom:1px solid white */
 `
 const NavItemsContainer = styled(FlexContainer)`
     list-style-type: none;
@@ -33,7 +32,10 @@ ${media.custom(768)} {
     color:darkblue;
     cursor:pointer;
     font-size:3.5rem;
-    /* padding:0; */
-    /* margin:0; */
-
+    margin-left:auto;
+`
+export const NavLogo = styled(Container)`
+    ${media.custom(768, "max")} {
+        display: none;
+    }
 `

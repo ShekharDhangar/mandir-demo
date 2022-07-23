@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { navbarData } from '../../data/navbarData';
-import { NavItemsContainer, Header, MenuIcon } from './styled.navbar';
+import { NavItemsContainer, Header, NavLogo, MenuIcon } from './styled.navbar';
 import { MenuItem } from './Menu/Menu';
 import { SubItem } from './SubMenu/SubMenu';
 import { FlexContainer } from '../../sharedStyled';
@@ -13,13 +13,15 @@ export default function Navbar() {
     console.log(showSidebar)
     return (
         <Header>
-            <FlexContainer justify="space-between" align="center" px="2rem">
-                <Image
-                    src="https://res.cloudinary.com/shekarassets/image/upload/v1658558770/logo_uygcz7.jpg"
-                    alt="logo"
-                    width={95}
-                    height={90}
-                />
+            <FlexContainer justify="space-between" align="center" px="2rem"  >
+                <NavLogo>
+                    <Image
+                        src="https://res.cloudinary.com/shekarassets/image/upload/v1658558770/logo_uygcz7.jpg"
+                        alt="logo"
+                        width={95}
+                        height={90}
+                    />
+                </NavLogo>
                 <NavItemsContainer as="ul" justify="center" align="center" >
                     {navbarData.map((item) => {
                         return (
