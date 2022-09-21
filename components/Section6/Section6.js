@@ -8,8 +8,8 @@
 // import gallery5 from '../../public/gallery-5.jpg';
 // import gallery4 from '../../public/gallery-4.jpg';
 // import gallery3 from '../../public/gallery-3.jpg';
-// import gallery2 from '../../public/gallery-2.jpg';
-// import gallery12 from '../../public/gallery-12.jpg';
+// import gallery2 from '../../public/gallery-2.JPG';
+// import gallery12 from '../../public/gallery-12.JPG';
 // import { SlideImageContainer, SlideList, SlideItem, ImageBox } from './Section6.styled';
 
 // const imageSliderList = [

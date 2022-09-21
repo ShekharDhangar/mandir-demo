@@ -1,23 +1,23 @@
-import Image from 'next/image'
-import React from 'react'
-import { ImageGridContainer, ImageLeftGrid, Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16, ImageRightGrid } from './styled.imageGrid'
-import gallery1 from '../../public/gallery-1.jpg'
-import gallery2 from '../../public/gallery-2.jpg'
-import gallery3 from '../../public/gallery-3.jpg'
-import gallery4 from '../../public/gallery-4.jpg'
-import gallery5 from '../../public/gallery-5.jpg'
-import gallery6 from '../../public/gallery-6.jpg'
-import gallery7 from '../../public/gallery-7.jpg'
-import gallery8 from '../../public/gallery-8.jpg'
-import gallery9 from '../../public/gallery-9.jpg'
-import gallery10 from '../../public/gallery-10.jpg'
-import gallery11 from '../../public/gallery-11.jpg'
-import gallery12 from '../../public/gallery-12.jpg'
-import gallery13 from '../../public/gallery-13.jpg'
-import gallery14 from '../../public/gallery-14.jpg'
-import gallery15 from '../../public/gallery-15.jpg'
-import gallery16 from '../../public/gallery-16.jpg'
-import { FlexContainer, } from '../../sharedStyled'
+import Image from 'next/image';
+import React from 'react';
+import { ImageGridContainer, ImageLeftGrid, Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14, Image15, Image16, ImageRightGrid } from './styled.imageGrid';
+import gallery1 from '../../public/gallery-1.jpg';
+import gallery2 from '../../public/gallery-2.JPG';
+import gallery3 from '../../public/gallery-3.jpg';
+import gallery4 from '../../public/gallery-4.jpg';
+import gallery5 from '../../public/gallery-5.jpg';
+import gallery6 from '../../public/gallery-6.jpg';
+import gallery7 from '../../public/gallery-7.jpg';
+import gallery8 from '../../public/gallery-8.jpg';
+import gallery9 from '../../public/gallery-9.jpg';
+import gallery10 from '../../public/gallery-10.jpg';
+import gallery11 from '../../public/gallery-11.jpg';
+import gallery12 from '../../public/gallery-12.JPG';
+import gallery13 from '../../public/gallery-13.jpg';
+import gallery14 from '../../public/gallery-14.jpg';
+import gallery15 from '../../public/gallery-15.jpg';
+import gallery16 from '../../public/gallery-16.jpg';
+import { FlexContainer, } from '../../sharedStyled';
 import { motion } from "framer-motion";
 
 const ImagesVariant = {
@@ -30,7 +30,7 @@ const ImagesVariant = {
         x: 0,
         transition: { type: "spring", duration: 2, delay: 2, }
     }
-}
+};
 const ImagesVariant2 = {
     hidden: {
         opacity: 0,
@@ -41,7 +41,7 @@ const ImagesVariant2 = {
         x: 0,
         transition: { type: "spring", duration: 2, }
     }
-}
+};
 
 function GridImageLeft() {
     return (
@@ -113,7 +113,7 @@ function GridImageLeft() {
                 </FlexContainer>
             </ImageRightGrid>
         </ImageGridContainer>
-    )
+    );
 }
 
 
@@ -159,7 +159,7 @@ function GridImageRight() {
                 </FlexContainer>
             </FlexContainer>
         </ImageGridContainer>
-    )
+    );
 }
 
-export { GridImageLeft, GridImageRight }
+export { GridImageLeft, GridImageRight };

@@ -9,7 +9,7 @@ import { Container } from "../sharedStyled";
 import { Image1 } from "../components/ImageGrid/styled.imageGrid";
 import Image from "next/image";
 import gallery1 from '../public/gallery-1.jpg';
-import gallery2 from '../public/gallery-2.jpg';
+import gallery2 from '../public/gallery-2.JPG';
 import gallery3 from '../public/gallery-3.jpg';
 import gallery4 from '../public/gallery-4.jpg';
 import gallery5 from '../public/gallery-5.jpg';
@@ -19,7 +19,7 @@ import gallery8 from '../public/gallery-8.jpg';
 import gallery9 from '../public/gallery-9.jpg';
 import gallery10 from '../public/gallery-10.jpg';
 import gallery11 from '../public/gallery-11.jpg';
-import gallery12 from '../public/gallery-12.jpg';
+import gallery12 from '../public/gallery-12.JPG';
 import styled from "styled-components";
 
 const sliderImageData = [
