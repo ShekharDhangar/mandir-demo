@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { Container, FlexContainer } from "../../sharedStyled";
+import { media } from "../../sharedStyled/mediaQueries";
 
 export const HorizontalWrapper = styled(Container)`
+/* ${media.custom(1200)} { */
   overflow-y:scroll;
   overflow-x:hidden;
   transform: rotate(270deg) translateX(-100%);
@@ -10,6 +12,7 @@ export const HorizontalWrapper = styled(Container)`
   top:0;
   width:100vh;
   height:100vw;
+/* } */
 `
 
 export const HorizontalInnerWrapper = styled(Container)`
@@ -34,7 +37,7 @@ export const ImageGridOuter = styled(FlexContainer)`
   justify-content:center;
   position:absolute;
   top:2%;
-  transform: translateX(50%);
+  /* transform: translateX(50%); */
   height:100vh;
   z-index:1;
   align-items:center;

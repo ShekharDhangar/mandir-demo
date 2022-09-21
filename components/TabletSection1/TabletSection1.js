@@ -6,9 +6,9 @@ import TabletImageGrid from "../TabletImageGrid/TabletImageGrid"
 const TabletGridWrapper = styled(FlexContainer)`
   position:absolute;
   height:100vh;
-  z-index:1;
+  z-index:2;
   padding-top:7rem;
-  align-items:start;
+  align-items:center;
   overflow:hidden;
 `
 export default function TabletSection1() {

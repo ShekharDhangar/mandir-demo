@@ -133,6 +133,12 @@ export const CommonContainer = styled.div`
             margin-right: ${() => props.mr};
         `}
     ${(props) =>
+        props.my &&
+        css`
+            margin-top: ${() => props.my};
+            margin-bottom: ${() => props.my};
+        `}
+    ${(props) =>
         props.mx &&
         css`
             margin-inline: ${() => props.mx};

@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import gallery1 from '../../public/gallery-1.webp'
-import gallery2 from '../../public/gallery-2.webp'
-import gallery3 from '../../public/gallery-3.webp'
-import gallery4 from '../../public/gallery-4.webp'
+import gallery1 from '../../public/gallery-1.jpg'
+import gallery2 from '../../public/gallery-2.jpg'
+import gallery3 from '../../public/gallery-3.jpg'
+import gallery4 from '../../public/gallery-4.jpg'
 import { FlexContainer, } from '../../sharedStyled'
 import { motion } from "framer-motion";
 import styled from 'styled-components'

@@ -3,7 +3,7 @@ import { CommonContainer } from "./CommonContainer";
 
 export const GridContainer = styled(CommonContainer)`
     display:${props => props.display ? props.display : "grid"};
-
+    
     ${(props) =>
         props.justify &&
         css`

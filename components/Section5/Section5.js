@@ -5,14 +5,14 @@ import Image from 'next/image';
 import { TabContainer, TabHead, TabTitle, TabContent, TabContentText, LargeText, TabText } from './styled.section5';
 
 const tabsData = [{
-    title: "tomato",
+    title: "title",
     url: "https://res.cloudinary.com/shekarassets/image/upload/v1657103114/siby-QXIBCvvA_jc-unsplash_dtqwzb.jpg",
     content: {
         heading: "heading",
         text: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
     }
 }, {
-    title: "lettuce",
+    title: "title",
     url: "https://res.cloudinary.com/shekarassets/image/upload/v1657103106/varun-pyasi-AZ4y6Bc3qeI-unsplash_eeqe0u.jpg",
     content: {
         heading: "heading",
@@ -20,7 +20,7 @@ const tabsData = [{
     }
 }, {
     url: "https://res.cloudinary.com/shekarassets/image/upload/v1657103097/sk-fY-ArEvk7sc-unsplash_a0rsvz.jpg",
-    title: "dont know",
+    title: "title ",
     content: {
         heading: "heading",
         text: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"

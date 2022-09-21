@@ -1,12 +1,9 @@
 import React from 'react';
-// import { useCloseOnClickOutside } from '../../CustomHooks/CustomHooks';
 import Link from 'next/link';
 import { Aside, SidebarDiv, SidebarText } from './styled.sidebar';
 import { Container, FlexContainer } from '../../sharedStyled';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { useClickOutside } from '../../hooks/useClickOutside';
-// import { pageLinks } from '../Navbar/navbar.data';
 const pageLinks = [{
     id: 1,
     page: "HOME",
@@ -27,20 +24,14 @@ const pageLinks = [{
     page: "PROJECTS",
 }
 ]
+
+
+
+
 const Sidebar = ({ showSidebar, setShowSidebar }) => {
-    // const elementRef = useClickOutside(() => setShowSidebar(false))
     return (
-        <Aside>
-            <SidebarDiv as={motion.div}
-                initial={{ x: "-100%" }}
-                animate={{
-                    x: 0
-                }}
-                exit={{
-                    x: "100%"
-                }}
-                transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-            // ref={elementRef}
+        <Aside open={showSidebar}  >
+            <SidebarDiv 
             >
                 <FlexContainer justify="center" mb="2rem" >
                     <Image
@@ -65,8 +56,9 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
                     ))}
                 </ul>
             </SidebarDiv>
-        </Aside>
-    );
+        </Aside >
+    )
+
 };
 
 export { Sidebar };

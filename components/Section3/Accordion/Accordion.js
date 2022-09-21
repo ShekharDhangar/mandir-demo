@@ -6,16 +6,16 @@ import { motion } from 'framer-motion';
 import { AccordionSection, Dropdown, Wrap } from './styled.accordion';
 const Data = [
     {
-        question: 'What do you call a dog magician?',
-        answer: 'A labracadabrador.'
+        question: 'Some Dummy Title here',
+        answer: 'Some Dummy Context here'
     },
     {
-        question: 'What do you call a funny mountain?',
-        answer: 'Hill-arious.'
+        question: 'Some Dummy Title here',
+        answer: 'Some Dummy Context here'
     },
     {
-        question: 'What did the astronaut say ?',
-        answer: 'I Apollo-gize.'
+        question: 'Some Dummy Title here',
+        answer: 'Some Dummy Context here'
     }
 ];
 

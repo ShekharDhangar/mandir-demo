@@ -3,7 +3,7 @@ import { navbarData } from '../../data/navbarData';
 import { NavItemsContainer, Header, NavLogo, MenuIcon } from './styled.navbar';
 import { MenuItem } from './Menu/Menu';
 import { SubItem } from './SubMenu/SubMenu';
-import { FlexContainer } from '../../sharedStyled';
+import { Container, FlexContainer } from '../../sharedStyled';
 import { BiMenuAltRight } from 'react-icons/bi'
 import { useState } from 'react';
 import { Sidebar } from '../Sidebar/Sidebar';
@@ -16,7 +16,7 @@ export default function Navbar() {
             <FlexContainer justify="space-between" align="center" px="2rem"  >
                 <NavLogo>
                     <Image
-                        src="https://res.cloudinary.com/shekarassets/image/upload/v1658558770/logo_uygcz7.jpg"
+                        src="https://res.cloudinary.com/shekarassets/image/upload/v1659099282/logo_uozhmw.jpg"
                         alt="logo"
                         width={95}
                         height={90}
@@ -35,10 +35,10 @@ export default function Navbar() {
                 <MenuIcon onClick={() => setShowSidebar(showSidebar => !showSidebar)} >
                     <BiMenuAltRight />
                 </MenuIcon>
-                {showSidebar && (<Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />)}
-                {/* <Container  >
-                <button styles={{ visibility: "hidden" }} ></button>
-                </Container> */}
+                <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+                <Container >
+                </Container>
+
             </FlexContainer>
         </Header >
     );

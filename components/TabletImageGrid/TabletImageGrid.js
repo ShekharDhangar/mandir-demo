@@ -1,18 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
-import gallery1 from '../../public/gallery-1.webp'
-import gallery2 from '../../public/gallery-2.webp'
-import gallery3 from '../../public/gallery-3.webp'
-import gallery4 from '../../public/gallery-4.webp'
-import gallery5 from '../../public/gallery-5.webp'
-import gallery6 from '../../public/gallery-6.webp'
-import gallery8 from '../../public/gallery-8.webp'
-import gallery9 from '../../public/gallery-9.webp'
-import gallery13 from '../../public/gallery-13.webp'
+import gallery1 from '../../public/gallery-1.jpg'
+import gallery2 from '../../public/gallery-2.jpg'
+import gallery3 from '../../public/gallery-3.jpg'
+import gallery4 from '../../public/gallery-4.jpg'
+import gallery5 from '../../public/gallery-5.jpg'
+import gallery6 from '../../public/gallery-6.jpg'
+import gallery8 from '../../public/gallery-8.jpg'
+import gallery7 from '../../public/gallery-7.jpg'
+import gallery9 from '../../public/gallery-9.jpg'
+import gallery11 from '../../public/gallery-11.jpg'
+import gallery14 from '../../public/gallery-14.jpg'
+import gallery13 from '../../public/gallery-13.jpg'
 import { FlexContainer, } from '../../sharedStyled'
 import { motion } from "framer-motion";
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { ImageGridContainer, ImageLeftGrid, Image1, Image2, Image3, Image4, Image5, Image6, Image9, Image13, ImageRightGrid } from './styled.tabletImageGrid'
+import { ImageGridContainer, ImageLeftGrid, Image1, Image2, Image3, Image4, Image5, Image6, Image9, Image7, ImageRightGrid } from '../ImageGrid/styled.imageGrid'
 
 const ImagesVariant = {
     hidden: {
@@ -27,69 +30,75 @@ const ImagesVariant = {
 }
 
 export default function TabletImageGrid() {
-    const largePhonePoint = useMediaQuery('(max-width:768px)');
+    const largePhonePoint = useMediaQuery('(max-width:1080px)');
 
     return (
-        <ImageGridContainer  >
+        <ImageGridContainer >
             <ImageLeftGrid layout >
                 <Image1 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
-
                 >
                     <Image
-                        src={gallery1}
+                        src={gallery2}
                         objectFit="cover"
                     />
                 </Image1>
                 <Image2 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
                 >
                     <Image
-                        src={gallery2}
+                        src={gallery5}
                         objectFit="cover"
                     />
                 </Image2>
                 <Image3 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
                 >
                     <Image
-                        src={gallery3}
+                        src={gallery4}
                         objectFit="cover"
                     />
                 </Image3>
-                <Image4 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                {/* <Image4 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
                 >
                     <Image
                         src={gallery4}
                         objectFit="cover"
                     />
-                </Image4>
+                </Image4> */}
             </ImageLeftGrid>
             {!largePhonePoint && (
                 <ImageRightGrid>
-                    <FlexContainer align="flex-start" gap="1rem" >
-                        <Image5 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                    <FlexContainer align="flex-start" gap="0.5rem" >
+                        <Image4 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
                         >
                             <Image
-                                src={gallery8}
+                                src={gallery11}
                                 objectFit="cover"
                             />
-                        </Image5>
-                    </FlexContainer>
-                    <FlexContainer align="flex-end" gap="1rem"   >
-                        <Image9 initial="hidden" animate="visible"
+                        </Image4>
+                        <Image5 initial="hidden" animate="visible"
                             as={motion.div} variants={ImagesVariant}>
                             <Image
-                                src={gallery8}
+                                src={gallery14}
                                 objectFit="cover"
                             />
-                        </Image9 >
+                        </Image5 >
                     </FlexContainer>
-                    <FlexContainer align="flex-end" gap="1rem" as={motion.div}  >
-                        <Image13 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                    <FlexContainer align="flex-start" gap="0.5rem" as={motion.div}  >
+                        <Image7 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
                         >
                             <Image
-                                src={gallery8}
+                                src={gallery9}
                                 objectFit="cover"
                             />
-                        </Image13>
+                        </Image7>
+                    </FlexContainer>
+                    <FlexContainer align="flex-start" gap="0.5rem" as={motion.div}  >
+                        <Image7 as={motion.div} variants={ImagesVariant} initial="hidden" animate="visible"
+                        >
+                            <Image
+                                src={gallery7}
+                                objectFit="cover"
+                            />
+                        </Image7>
                     </FlexContainer>
                 </ImageRightGrid>
             )}

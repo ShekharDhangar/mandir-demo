@@ -2,67 +2,68 @@ import styled from "styled-components";
 import { FlexContainer, GridContainer } from "../../sharedStyled";
 
 export const ImageGridContainer = styled(FlexContainer)`
-    width: 100%;
+    width: max-content;
     align-items:center;
+    justify-content:flex-start;
+    gap:0.5rem;
 `
 
 export const Image1 = styled.div`
-    height: 8.9rem;
-    width:11.75rem;
+    height:21rem;
+    width:14rem;
+
 `
 export const Image2 = styled.div`
-    height:16.3rem;
-    width:17rem;
-
+    height:17.4rem;
+    width:26rem;
 `
 
 export const Image3 = styled.div`
-    height:14.5rem;
-    width:28rem;
+    height:16rem;
+    width:24rem;
 `
 export const Image4 = styled.div`
-    height:12.7rem;
-    width:19rem;
+   height:19rem;
+    width:14.5rem;
 `
 export const Image5 = styled.div`
-    height:18rem;
-    width:12rem;
+    height:19rem;
+    width:12.8rem;
 
 `
 export const Image6 = styled.div`
-    height:18rem;
-    width:17.2rem;
+    height:18.75rem;
+    width:28rem;
 
 `
 export const Image7 = styled.div`
-    height:18rem;
-    width:16.7rem;
-`
-export const Image8 = styled.div`
-    height:18rem;
-    width:27rem;
+    height:19rem;
+    width:28rem;
 
 `
+export const Image8 = styled.div`
+    height:19rem;
+    width:19.2rem;
+`
 export const Image9 = styled.div`
-    height:16.3rem;
-    width:24.5rem;
+    height:19rem;
+    width:25.5rem;
 `
 export const Image10 = styled.div`
-    height:16.3rem;
-    width:24.35rem;
+    height:38.2rem;
+    width:24rem;
 `
 export const Image11 = styled.div`
-    height:16.3rem;
-    width:14rem;
-    
+    height:20.1rem;
+    width:30rem;
 `
 export const Image12 = styled.div`
-    height:16.3rem;
-    width:23.5rem;
+    height:16.35rem;
+    width:24.5rem;
 `
 export const Image13 = styled.div`
     height:20rem;
-    width:20rem;
+    width:25.5rem;
 `
 export const Image14 = styled.div`
     height:20rem;
@@ -88,7 +89,7 @@ export const ImageLeftGrid = styled(FlexContainer)`
 export const ImageRightGrid = styled(FlexContainer)`
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-left:1rem;
+    flex-direction:column;
     gap:0.5rem;
     
 `

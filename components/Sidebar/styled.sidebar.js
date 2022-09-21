@@ -1,7 +1,7 @@
 // /* note:sideBar */
 import styled from "styled-components"
 import { Container } from "../../sharedStyled"
-
+import { media } from "../../sharedStyled/mediaQueries"
 export const Aside = styled(Container)`
   position: fixed;
   transition: opacity 0.2s linear;
@@ -9,7 +9,14 @@ export const Aside = styled(Container)`
   top: 0;
   width: 80%;
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  z-index:100;
+  ${media.custom(768)}{
+    display:none;
+  }
+  
+  transform: ${props => (props.open ? "translateX(0%)" : "translateX(-100%)")};
+  transition:0.2s all ease-in-out;
+
 `
 export const SidebarDiv = styled(Container)`
   width: 100%;
@@ -17,6 +24,9 @@ export const SidebarDiv = styled(Container)`
   background-color: white;
   color: black;
   height:100%;
+  position:relative;
+  z-index:100;
+
 `
 export const SidebarText = styled(Container)`
     font-size:2rem;

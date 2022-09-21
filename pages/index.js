@@ -9,10 +9,11 @@ import Section4 from '../components/Section4/Section4';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Section1 from '../components/Section1/Section1';
 import MobileSection1 from '../components/PhoneComponents/MobileSection1';
+import MobSection2 from '../components/PhoneComponents/MobSection2/MobSection2';
 export default function Home() {
   let desktopPoint = useMediaQuery('(min-width:1201px)')
   let tabletBreakPoint = useMediaQuery('(max-width:1200px)');
-  const mobileBreakPoint = useMediaQuery('(max-width:550px)')
+  const mobileBreakPoint = useMediaQuery('(max-width:650px)')
   if (mobileBreakPoint) {
     desktopPoint = false;
     tabletBreakPoint = false;
@@ -40,7 +41,12 @@ export default function Home() {
         </>
       )
       }
-      {mobileBreakPoint && <MobileSection1 />}
+      {mobileBreakPoint && (
+        <>
+          <MobileSection1 />
+          <MobSection2 />
+        </>
+      )}
     </>
   )
 }

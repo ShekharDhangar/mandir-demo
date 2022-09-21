@@ -1,14 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
-import Section4 from '../components/Section4/Section4'
-import { Sidebar } from '../components/Sidebar/Sidebar'
-import TabletSection1 from '../components/TabletSection1/TabletSection1'
-import { Container, FlexContainer } from '../sharedStyled'
+import ImageHover from '../components/Section4/HoverImages'
+import Responsive from '../components/Section6/Section6'
 
 function ok() {
     return (
         <>
-        <Sidebar/>
+            <Responsive />
         </>
     )
 }

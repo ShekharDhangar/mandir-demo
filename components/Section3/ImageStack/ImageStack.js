@@ -41,8 +41,8 @@ const imageVariant = {
 export default function ImageStack({ cards }) {
 
     return (
-        <StackWrapper>
-            <InnerStackWrapper as={motion.div} >
+        <StackWrapper as={motion.div} layout >
+            <InnerStackWrapper as={motion.div} layout >
                 {cards.map((item, index) => {
                     const animateValues = (indexValue) => ({
                         right: indexValue * - CARD_OFFSET * 2,

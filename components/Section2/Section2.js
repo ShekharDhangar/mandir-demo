@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 import { Container } from '../../sharedStyled'
-import { Bg2Wrapper } from './styled.section2'
 
 function Section2() {
   return (
-    <Container zIndex="-1">
+    <Container zIndex="-1" w="100vw" h="100vh" overflow="hidden" >
       <Image
         src="https://res.cloudinary.com/shekarassets/image/upload/v1657081062/wallpaperflare.com_wallpaper_szz9qm.jpg"
         alt='hero'

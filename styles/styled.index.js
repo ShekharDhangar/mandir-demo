@@ -7,5 +7,4 @@ overflow-x:scroll;
 overflow-y:hidden;
 height:100vh;
 scroll-snap-type:x mandatory;
-  border:2px solid green;
 `
